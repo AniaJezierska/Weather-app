@@ -1,28 +1,36 @@
-# Weather-Journal App Project
+# Weather Journal App
 
-This project requires creating an asynchronous web application that uses Web API and user data to dynamically update the UI for a Weather-Journal App.
+A simple application that is an exercise on web APIs, fetch API and `async` functions, build with `Node.js`, `html`, `css` and `javascript`.  
+The application will try to fetch the weather data from [Open Weather Map](https://openweathermap.org/),  
+and show the temperature with the current date, when the user press the Generate button.
+
+# How to run
 
 ## Dependency installation
-Step 1:
 
 ```
 npm install
 ```
+
 ```
-npm install cors
-```
-```
-npm install express
-```
-```
-npm install body-parser
+npm install body-parser cors express
 ```
 
-Step 2:
+## Running the server
+
 Run in the project directory
-```
-node server.js
 
-Step 3:
+```
+npm start
+```
+
+## Go to the application
+
 Go to the browser and open
-[http://localhost:8000](http://localhost:8000) 
+[http://localhost:8000](http://localhost:8000)
+
+Submitting the form will send a request to the OpenWeatherMap API and return the weather information for that location.
+
+## OpenWeatherMap API
+
+The project requires acquire api credentials from OpenWeatherMap website. Use your credentials and the base url to create global variavles at the top of your app.js code.
